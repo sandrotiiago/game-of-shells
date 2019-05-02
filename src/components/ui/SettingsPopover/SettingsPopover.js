@@ -22,6 +22,21 @@ class SettingsPopover extends Component {
     };
   }
 
+  componentWillMount() {
+    document.addEventListener('mousedown', this.handleClick, false);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClick, false);
+  }
+
+  handleClick = e => {
+    // Close popover if user clicked outside
+    if (!this.popover.contains(e.target)) {
+      this.closePopover();
+    }
+  }
+
   changeDifficulty = difficulty => {
     this.setState({
       difficulty
@@ -40,7 +55,6 @@ class SettingsPopover extends Component {
 
   updateSettings = () => {
     this.props.updateSettings(this.state.difficulty, this.state.totalOfCups);
-    this.closePopover();
   }
 
   closePopover = () => {
@@ -76,7 +90,9 @@ class SettingsPopover extends Component {
     const difficultyButtons = this.getDifficultyButtons();
 
     return (
-      <div className={ 'settings-popover' + (isOpen ? ' visible' : '') }>
+      <div
+        ref={popover => this.popover = popover}
+        className={ 'settings-popover' + (isOpen ? ' visible' : '') }>
         <div className="difficulty">
           <label>{ DIFFICULTY }</label>
           <ul>{difficultyButtons}</ul>
