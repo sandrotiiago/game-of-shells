@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'icon';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/icons.eot?hv5edh');
+	src: url('../fonts/icons.eot?hv5edh#iefix') format('embedded-opentype'),
+		url('../fonts/icons.ttf?hv5edh') format('truetype'),
+		url('../fonts/icons.woff?hv5edh') format('woff'),
+		url('../fonts/icons.woff?hv5edh') format('woff2'),
+		url('../fonts/icons.svg?hv5edh#wofont') format('svg');
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'icon' !important;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	text-transform: none;
+}
+
+.icon-settings:before {
+	content: "\e900";
+}

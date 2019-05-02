@@ -1,0 +1,32 @@
+.cup {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transition: left .7s ease;
+  transform: translateY(-50%);
+}
+
+.cup-wrapper {
+  padding: 0 20px;
+}
+
+  .cup-wrapper > .cup-image {
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    max-width: 100%;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+  }
+
+  .cup-wrapper > .cup-raised {
+    bottom: 100px;
+  }
+
+  .cup-wrapper > .ball {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    max-width: calc(100% / 2.5);
+    transform: translatex(-50%);
+  }

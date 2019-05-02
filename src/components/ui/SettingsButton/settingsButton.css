@@ -1,0 +1,22 @@
+.settings-btn-wrapper {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 1;
+}
+
+  .settings-btn {
+    font-size: 40px;
+    color: #000;
+    opacity: 0.35;
+    transition: opacity .12s linear;
+  }
+
+  .settings-btn.disabled {
+    opacity: 0.2;
+    cursor: default;
+  }
+
+  .settings-btn:not(.disabled):hover {
+    opacity: 0.5;
+  }

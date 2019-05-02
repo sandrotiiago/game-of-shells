@@ -1,0 +1,29 @@
+@media (max-width:1300px) {
+ 	div.container {
+ 		width: 1024px;
+	}
+}
+
+@media (max-width:1100px) {
+ 	div.container {
+ 		width: 800px;
+	}
+}
+
+@media (max-width:850px) {
+ 	div.container {
+ 		width: auto;
+		margin: 0 50px;
+	}
+}
+
+@media (max-width:570px) {
+ 	div.container{margin: 0 20px}
+  .header h1{font-size:24px}
+  .settings-btn-wrapper{top:20px;right:20px}
+  .settings-btn{font-size:26px}
+  .settings-popover{top:40px}
+  .settings-popover .difficulty ul{flex-direction:column;width:200px;height:auto;}
+  .settings-popover .difficulty ul > li{margin-left:0;height:34px;margin-top:10px;justify-content:center}
+  .shell-wrapper{padding:0 10px}
+}

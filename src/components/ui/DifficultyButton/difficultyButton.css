@@ -1,0 +1,26 @@
+.difficulty-button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 25px;
+  margin-left: 20px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 34px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  transition: all .12s linear;
+}
+
+.difficulty-button:first-child {
+  margin-left: 0;
+}
+
+.difficulty-button:hover,
+.difficulty-button.selected {
+  background: #2596D9;
+  border-color: #2596D9;
+  color: #fff;
+}

@@ -1,0 +1,11 @@
+.footer {
+  height: 20vh;
+}
+
+  .footer > div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
